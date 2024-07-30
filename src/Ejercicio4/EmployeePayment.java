@@ -4,10 +4,10 @@ import javax.swing.*;
 
 //EJERCICIO4
 
-public class EmployeePayment {
+public class  EmployeePayment {
     String employeeCode;
     private double basicSalary;
-    private double overtimeHours;
+    private double extraHours;
     private int totalHours;
     private double deductions;
     private double loanDeductions;
@@ -30,12 +30,11 @@ public class EmployeePayment {
         this.basicSalary = basicSalary;
     }
 
-    public double getOvertimeHours() {
-        return overtimeHours;
-    }
+    public double getOvertimeHours() {return extraHours;}
+
 
     public void setOvertimeHours(double overtimeHours) {
-        this.overtimeHours = overtimeHours;
+        this.extraHours = extraHours;
     }
 
     public int getTotalHours() {
@@ -78,13 +77,13 @@ public class EmployeePayment {
         this.netPay = netPay;
     }
 
-    public double calculateOvertimeValue() {
+    public double calculatextrashours() {
         double overtimeRate = basicSalary / 150;
         return overtimeRate;
     }
 
     public double calculateEarned() {
-        return basicSalary + calculateOvertimeValue() + bonus;
+        return basicSalary + calculatextrashours() + bonus;
     }
 
     public double calculateDeductions() {
@@ -108,7 +107,7 @@ public class EmployeePayment {
 
         calculateNetPay();
 
-        // Display the results
+
         JOptionPane.showMessageDialog(null, String.format(
                 "Employee Code: %s\nBasic ejercicio8.Salary: %.2f\nOvertime Hours: %.2f\nTotal Hours: %d\nDeductions: %.2f\nLoan Deductions: %.2f\nBonus: %.2f\nNet Pay: %.2f",
                 getEmployeeCode(), getBasicSalary(), getOvertimeHours(), getTotalHours(), getDeductions(), getLoanDeductions(), getBonus(), getNetPay()

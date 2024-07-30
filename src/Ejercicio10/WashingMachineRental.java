@@ -2,7 +2,6 @@ package Ejercicio10;
 
 import javax.swing.*;
 
-//EJERCICIO10
 
 public class WashingMachineRental {
     private int washingMachineType; // 1 for large, 2 for small

@@ -11,6 +11,53 @@ public class Grades {
     private double computerScience;
     private double average;
 
+    public double getPhysics() {
+        return physics;
+    }
+
+    public void setPhysics(double physics) {
+        this.physics = physics;
+    }
+
+    public double getBiology() {
+        return biology;
+    }
+
+    public void setBiology(double biology) {
+        this.biology = biology;
+    }
+
+    public double getChemistry() {
+        return chemistry;
+    }
+
+    public void setChemistry(double chemistry) {
+        this.chemistry = chemistry;
+    }
+
+    public double getMathematics() {
+        return mathematics;
+    }
+
+    public void setMathematics(double mathematics) {
+        this.mathematics = mathematics;
+    }
+
+    public double getComputerScience() {
+        return computerScience;
+    }
+
+    public void setComputerScience(double computerScience) {
+        this.computerScience = computerScience;
+    }
+
+    public double getAverage() {
+        return average;
+    }
+
+    public void setAverage(double average) {
+        this.average = average;
+    }
 
     public void calculateAverage() {
         average = (physics + chemistry + biology + mathematics + computerScience) / 5;

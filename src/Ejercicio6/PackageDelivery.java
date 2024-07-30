@@ -55,7 +55,7 @@ public class PackageDelivery {
         public void requestDataAndCalculateCost() {
             try {
                 trackingNumber = Integer.parseInt(JOptionPane.showInputDialog("Enter the tracking number:"));
-                date = JOptionPane.showInputDialog("Enter the date (dd/mm/yyyy):");
+                date = JOptionPane.showInputDialog("Enter the date (dd/mm/aaaa):");
                 packagingType = JOptionPane.showInputDialog("Enter the type of packaging:");
                 clientID = JOptionPane.showInputDialog("Enter the client's ID:");
                 weight = Double.parseDouble(JOptionPane.showInputDialog("Enter the weight of the package (kg):"));

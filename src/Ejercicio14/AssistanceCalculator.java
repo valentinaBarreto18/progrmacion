@@ -8,6 +8,25 @@ public class AssistanceCalculator {
     private int age;
     private int assistance;
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAssistance(int assistance) {
+        this.assistance = assistance;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public int getAssistance() {
         return assistance;

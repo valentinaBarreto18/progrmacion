@@ -13,10 +13,15 @@ public class GymCost {
             return cost;
         }
 
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
 
-        public void setDays(int days) {
+    public void setDays(int days) {
             this.days = days;
         }
+
+
 
 
         public void calculateCost() {

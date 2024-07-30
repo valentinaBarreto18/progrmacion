@@ -2,7 +2,6 @@ package ejercicio8;
 
 import javax.swing.*;
 
-//EJERCICIO8
 
 public class Salary {
 

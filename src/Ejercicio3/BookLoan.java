@@ -16,7 +16,7 @@ public class BookLoan {
         public static BookLoan createLoan() {
             BookLoan loan = new BookLoan();
             loan.loanCode = JOptionPane.showInputDialog("Enter the loan code:");
-            loan.loanDate = JOptionPane.showInputDialog("Enter the loan date (YYYY-MM-DD):");
+            loan.loanDate = JOptionPane.showInputDialog("Enter the loan date :");
             loan.bookTitle = JOptionPane.showInputDialog("Enter the book title:");
             loan.userCode = JOptionPane.showInputDialog("Enter the user code:");
             loan.loanDays = Integer.parseInt(JOptionPane.showInputDialog("Enter the number of loan days:"));

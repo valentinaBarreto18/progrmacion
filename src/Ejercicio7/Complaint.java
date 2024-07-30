@@ -1,7 +1,7 @@
 package Ejercicio7;
 
 import javax.swing.*;
-//EJERCICIO7
+
 
 public class Complaint {
 
@@ -31,19 +31,19 @@ public class Complaint {
 
     public void validateComplaintStatus() {
         if ("pending".equalsIgnoreCase(complaintStatus)) {
-            JOptionPane.showMessageDialog(null, "The complaint is pending.", "Ejercicio7.Complaint Status", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "The complaint is pending.", "Complaint Status", JOptionPane.INFORMATION_MESSAGE);
         } else if ("in process".equalsIgnoreCase(complaintStatus)) {
-            JOptionPane.showMessageDialog(null, "The complaint is in process.", "Ejercicio7.Complaint Status", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "The complaint is in process.", "Complaint Status", JOptionPane.INFORMATION_MESSAGE);
         } else if ("resolved".equalsIgnoreCase(complaintStatus)) {
-            JOptionPane.showMessageDialog(null, "The complaint has been resolved.", "Ejercicio7.Complaint Status", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "The complaint has been resolved.", "Complaint Status", JOptionPane.INFORMATION_MESSAGE);
         } else {
-            JOptionPane.showMessageDialog(null, "Unknown complaint status.", "Ejercicio7.Complaint Status", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Unknown complaint status.", "Complaint Status", JOptionPane.WARNING_MESSAGE);
         }
     }
 
 
     public void receiptMessage() {
-        JOptionPane.showMessageDialog(null, "Ejercicio7.Complaint received successfully.\nEjercicio7.Complaint Number: " + complaintNumber + "\nSubject: " + subject + "\nDescription: " + complaintDescription, "Ejercicio7.Complaint Receipt", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Complaint received successfully.\n.Complaint Number: " + complaintNumber + "\nSubject: " + subject + "\nDescription: " + complaintDescription, "Ejercicio7.Complaint Receipt", JOptionPane.INFORMATION_MESSAGE);
     }
 
 
