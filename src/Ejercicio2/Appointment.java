@@ -11,6 +11,17 @@ public class Appointment {
     String patientName;
     private String medicalCenter;
 
+    public Appointment(String appointmentCode, String date, String time, String office, String doctorName, String patientName, String medicalCenter) {
+
+        this.apointmentCode = appointmentCode;
+        this.date = date;
+        this.time = time;
+        this.office = office;
+        this.doctorName = doctorName;
+        this.patientName = patientName;
+        this.medicalCenter = medicalCenter;
+    }
+
     public String getMedicalCenter() {
         return medicalCenter;
     }

@@ -11,6 +11,12 @@ public class User {
     private String enteredPassword;
     private boolean systemStatus;
 
+    public User(String baseUsername, String basePassword, boolean systemStatus) {
+        this.baseUsername = baseUsername;
+        this.basePassword = basePassword;
+        this.systemStatus = systemStatus;
+    }
+
 
     public void validateStatus() {
         if (systemStatus) {
