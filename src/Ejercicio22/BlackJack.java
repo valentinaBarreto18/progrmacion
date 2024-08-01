@@ -5,19 +5,31 @@ import java.util.Random;
 //EJERCICIO22
 
 public class BlackJack {
-    public Random cards = new Random();
 
-    public int card1Machine = cards.nextInt(10) +1;
-    public int card2Machine = cards.nextInt(10) +1;
-    public int card3Machine = cards.nextInt(10) +1;
+    private Random cards = new Random();
+    private int card1Machine;
+    private int card2Machine;
+    private int card3Machine;
+
+    private int card1User;
+    private int card2User;
+    private int card3User;
+
+    private int totalMachine;
+    private String namePlayer;
 
 
-    public int card1User = cards.nextInt(10) +1;
-    public int card2User = cards.nextInt(10) +1;
-    public int card3User = cards.nextInt(10) +1;
+    public BlackJack(String namePlayer) {
+        this.namePlayer = namePlayer;
 
-    public int totalMachine = card1Machine + card2Machine + card3Machine;
-    public String namePlayer;
+    this.card1Machine = cards.nextInt(10) + 1;
+        this.card2Machine = cards.nextInt(10) + 1;
+        this.card3Machine = cards.nextInt(10) + 1;
+ this.card1User = cards.nextInt(10) + 1;
+        this.card2User = cards.nextInt(10) + 1;
+        this.card3User = cards.nextInt(10) + 1;
+          this.totalMachine = card1Machine + card2Machine + card3Machine;
+}
 
 
     public void game(){

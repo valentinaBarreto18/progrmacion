@@ -6,6 +6,13 @@ import javax.swing.*;
 public class EvenOddNumber {
     private int number;
 
+    public EvenOddNumber() {
+    }
+
+    public EvenOddNumber(int number) {
+        this.number = number;
+    }
+
 
     public int getNumber() {
         return number;

@@ -9,6 +9,14 @@ public class Salary {
         public int hoursWorked;
         private int totalSalary;
 
+    public Salary() {
+    }
+
+    public Salary(String personName, int hoursWorked) {
+        this.personName = personName;
+        this.hoursWorked = hoursWorked;
+        calculateTotalSalary();
+    }
 
         public int getTotalSalary() {
             return totalSalary;

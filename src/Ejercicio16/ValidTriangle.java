@@ -9,6 +9,19 @@ public class ValidTriangle {
         private int angle2;
         private int angle3;
 
+    public ValidTriangle(int angle1, int angle2, int angle3) {
+        this.angle1 = angle1;
+        this.angle2 = angle2;
+        this.angle3 = angle3;
+    }
+
+    public ValidTriangle() {
+        this.angle1 = 0;
+        this.angle2 = 0;
+        this.angle3 = 0;
+    }
+
+
     public int getAngle1() {
         return angle1;
     }

@@ -14,7 +14,21 @@ public class SandwichOrder {
         private boolean cheese;
         private double totalCost;
 
-        public void calculateCost() {
+    public SandwichOrder(String size, boolean bacon, boolean jalapeno, boolean turkey, boolean cheese) {
+        this.size = size;
+        this.bacon = bacon;
+        this.jalapeno = jalapeno;
+        this.turkey = turkey;
+        this.cheese = cheese;
+        this.totalCost = 0;
+    }
+
+    public SandwichOrder() {
+        this("small", false, false, false, false);
+    }
+
+
+    public void calculateCost() {
             double sandwichCost = 0;
             double baconCost = 0;
             double turkeyCost = 0;

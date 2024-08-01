@@ -8,6 +8,17 @@ public class AssistanceCalculator {
     private int age;
     private int assistance;
 
+    public AssistanceCalculator(String gender, int age, int assistance) {
+        this.gender = gender;
+        this.age = age;
+        this.assistance = assistance;
+    }
+    public AssistanceCalculator() {
+        this.gender = "";
+        this.age = 0;
+        this.assistance = 0;
+    }
+
     public String getGender() {
         return gender;
     }

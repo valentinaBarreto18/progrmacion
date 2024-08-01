@@ -14,6 +14,18 @@ public class  EmployeePayment {
     private double bonus;
     private double netPay;
 
+    public EmployeePayment(){{
+    this.basicSalary = basicSalary;
+    this.extraHours = extraHours;
+    this.totalHours = totalHours;
+    this.deductions = deductions;
+    this.loanDeductions = loanDeductions;
+    this.bonus = bonus;
+    this.netPay = netPay;}
+
+    }
+
+
     public String getEmployeeCode() {
         return employeeCode;
     }

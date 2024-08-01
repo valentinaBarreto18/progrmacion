@@ -8,6 +8,15 @@ public class RectangleArea {
     public double base;
     public double height;
 
+    public RectangleArea() {
+        this.base = 0;
+        this.height = 0;
+    }
+
+    public RectangleArea(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
 
     public boolean validateEnteredData() {
         if (base <= 0) {

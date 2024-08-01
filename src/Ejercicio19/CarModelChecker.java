@@ -2,15 +2,23 @@ package Ejercicio19;
 
 import javax.swing.JOptionPane;
 
-//EJERCICIO19
+
 
 public class CarModelChecker {
     private int modelNumber;
 
 
-    public void checkModel() { // Defective model numbers
-        int[] defectiveModels = {119, 179, 189, 190, 191, 192, 193, 194, 195, 221, 780};
+    public CarModelChecker(int modelNumber) {
+        this.modelNumber = modelNumber;
+    }
 
+
+    public CarModelChecker() {
+        this.modelNumber = 0;
+    }
+
+    public void checkModel() {
+        int[] defectiveModels = {119, 179, 189, 190, 191, 192, 193, 194, 195, 221, 780};
 
         boolean isDefective = false;
         for (int model : defectiveModels) {
@@ -20,7 +28,6 @@ public class CarModelChecker {
             }
         }
 
-
         if (isDefective) {
             JOptionPane.showMessageDialog(null, "The car is defective, take it to warranty.", "Defective Car", JOptionPane.INFORMATION_MESSAGE);
         } else {
@@ -28,10 +35,8 @@ public class CarModelChecker {
         }
     }
 
-
     public void requestModelAndCheck() {
         try {
-
             modelNumber = Integer.parseInt(JOptionPane.showInputDialog("Enter the model number of your car:"));
             checkModel();
         } catch (NumberFormatException e) {
@@ -44,4 +49,3 @@ public class CarModelChecker {
         checker.requestModelAndCheck();
     }
 }
-

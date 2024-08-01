@@ -2,7 +2,8 @@ package Ejercicio6;
 
 import javax.swing.*;
 //EJERCICIO6
-public class PackageDelivery {
+
+    public class PackageDelivery {
 
         public int trackingNumber;
         private String date;
@@ -14,10 +15,25 @@ public class PackageDelivery {
         private double cost;
         private String deliveryStatus;
 
+        public PackageDelivery() {
+        }
+
+        public PackageDelivery(int trackingNumber, String date, String packagingType, String clientID, double weight, String originCity, String destinationCity, String deliveryStatus) {
+            this.trackingNumber = trackingNumber;
+            this.date = date;
+            this.packagingType = packagingType;
+            this.clientID = clientID;
+            this.weight = weight;
+            this.originCity = originCity;
+            this.destinationCity = destinationCity;
+            this.deliveryStatus = deliveryStatus;
+            calculateCostPerKilo();
+        }
+
+
 
         public String getDate() { return date; }
         public void setDate(String date) { this.date = date; }
-
         public String getPackagingType() { return packagingType; }
         public void setPackagingType(String packagingType) { this.packagingType = packagingType; }
 

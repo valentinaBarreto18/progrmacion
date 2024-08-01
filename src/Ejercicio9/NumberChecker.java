@@ -5,6 +5,12 @@ import javax.swing.*;
 public class NumberChecker {
     private int number;
 
+    public NumberChecker() {
+    }
+
+    public NumberChecker(int number) {
+        this.number = number;
+    }
 
     public int getNumber() {
         return number;

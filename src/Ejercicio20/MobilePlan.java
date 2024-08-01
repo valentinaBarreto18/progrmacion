@@ -13,6 +13,18 @@ public class MobilePlan {
         private double dataPackageRate;
         private double totalCost;
 
+    public MobilePlan(String carrier, int internationalMinutes) {
+        this.carrier = carrier;
+        this.internationalMinutes = internationalMinutes;
+        this.fixedCharge = 0;
+        this.internationalMinuteRate = 0;
+        this.dataPackageRate = 0;
+        this.totalCost = 0;
+    }
+
+    public MobilePlan() {
+        this("Unknown", 0);
+    }
 
         public void calculateCost() {
             switch (carrier.toLowerCase()) {

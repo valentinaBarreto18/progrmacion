@@ -11,6 +11,17 @@ public class Complaint {
     public String complaintDescription;
     private String complaintStatus;
 
+    public Complaint() {
+    }
+
+    public Complaint(int complaintNumber, String personName, String subject, String complaintDescription, String complaintStatus) {
+        this.complaintNumber = complaintNumber;
+        this.personName = personName;
+        this.subject = subject;
+        this.complaintDescription = complaintDescription;
+        this.complaintStatus = complaintStatus;
+    }
+
 
     public String getPersonName() {
         return personName;

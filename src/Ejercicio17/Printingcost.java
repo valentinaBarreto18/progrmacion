@@ -9,6 +9,17 @@ public class Printingcost {
         private double pricePerCopy;
         private double totalPrice;
 
+    public Printingcost(int numberOfCopies) {
+        this.numberOfCopies = numberOfCopies;
+        this.pricePerCopy = 0.0;
+        this.totalPrice = 0.0;
+    }
+    public Printingcost() {
+        this.numberOfCopies = 0;
+        this.pricePerCopy = 0.0;
+        this.totalPrice = 0.0;
+    }
+
 
         public int getNumberOfCopies() {
             return numberOfCopies;

@@ -11,6 +11,17 @@ public class Grades {
     private double computerScience;
     private double average;
 
+    public Grades() {
+    }
+    public Grades(double physics, double chemistry, double biology, double mathematics, double computerScience) {
+        this.physics = physics;
+        this.chemistry = chemistry;
+        this.biology = biology;
+        this.mathematics = mathematics;
+        this.computerScience = computerScience;
+        calculateAverage();
+    }
+
     public double getPhysics() {
         return physics;
     }

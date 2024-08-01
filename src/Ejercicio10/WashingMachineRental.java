@@ -9,6 +9,14 @@ public class WashingMachineRental {
     private int numberOfWashingMachines;
     private double totalCost;
 
+    public WashingMachineRental() {
+    }
+    public WashingMachineRental(int washingMachineType, int hoursRented, int numberOfWashingMachines) {
+        this.washingMachineType = washingMachineType;
+        this.hoursRented = hoursRented;
+        this.numberOfWashingMachines = numberOfWashingMachines;
+        calculateTotalCost();
+    }
 
     public int getWashingMachineType() {
         return washingMachineType;

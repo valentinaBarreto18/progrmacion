@@ -10,8 +10,26 @@ public class BookLoan {
         String loanDate;
         String bookTitle;
         String userCode;
-        int loanDays;
+       int loanDays;
         String loanStatus;
+
+        public BookLoan(){
+            this.loanCode = "";
+            this.loanDate = "";
+            this.bookTitle = "";
+            this.userCode = "";
+            this.loanDays = 0;
+            this.loanStatus = "";
+        }
+
+        public BookLoan(String LoanCode,String LoanDate, String bookTitle, String userCode, int loanDays, String loanStatus){
+            this.loanCode = LoanCode;
+            this.loanDate = LoanDate;
+            this.bookTitle = bookTitle;
+            this.userCode = userCode;
+            this.loanDays = loanDays;
+            this.loanStatus = loanStatus;
+        }
 
         public static BookLoan createLoan() {
             BookLoan loan = new BookLoan();

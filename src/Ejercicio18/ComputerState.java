@@ -8,7 +8,14 @@ public class ComputerState {
     private boolean emitsBeep;
     private boolean hardDriveSpins;
 
-
+    public ComputerState(boolean emitsBeep, boolean hardDriveSpins) {
+        this.emitsBeep = emitsBeep;
+        this.hardDriveSpins = hardDriveSpins;
+    }
+    public  ComputerState() {
+        this.emitsBeep = false;
+        this.hardDriveSpins = false;
+    }
     public boolean isEmitsBeep() {
         return emitsBeep;
     }

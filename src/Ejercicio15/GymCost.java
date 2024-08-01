@@ -8,8 +8,17 @@ public class GymCost {
         private int days;
         private int cost;
 
+    public GymCost(int days, int cost) {
+        this.days = days;
+        this.cost = cost;
+    }
+    public GymCost() {
+        this.days = 0;
+        this.cost = 0;
+    }
 
-        public int getCost() {
+
+    public int getCost() {
             return cost;
         }
 
